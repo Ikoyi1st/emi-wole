@@ -36,20 +36,7 @@ function Ornament({ color = GOLD, style }) {
   );
 }
 
-function FrameBorder() {
-  return (
-    <div
-      style={{
-        position: "absolute",
-        inset: "16px",
-        border: `1px solid ${GOLD}`,
-        pointerEvents: "none",
-      }}
-    >
-      <div style={{ position: "absolute", inset: "6px", border: `1px solid ${GOLD}55` }} />
-    </div>
-  );
-}
+
 
 export default function App() {
   return (
@@ -83,7 +70,8 @@ export default function App() {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            objectPosition: "top center",
+            objectPosition: "right center",
+          
           }}
         />
         <div
@@ -93,8 +81,7 @@ export default function App() {
             background: `linear-gradient(180deg, ${WINE_DEEP}cc 0%, ${WINE}55 32%, ${WINE}66 62%, ${WINE_DEEP}f2 100%)`,
           }}
         />
-        <FrameBorder />
-
+        
         <div style={{ position: "relative", zIndex: 1 }}>
           <div
             style={{
@@ -275,7 +262,7 @@ export default function App() {
             background: `linear-gradient(180deg, ${WINE_DEEP}f2 0%, ${WINE}66 30%, ${WINE}55 55%, ${WINE_DEEP}e6 100%)`,
           }}
         />
-        <FrameBorder />
+    
 
         <div style={{ position: "relative", zIndex: 1 }}>
           <div
